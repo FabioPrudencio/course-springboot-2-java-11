@@ -28,6 +28,10 @@ public class UserService {
 		return repository.save(obj);
 	}
 	
+	public void delete(Long id) {
+		repository.deleteById(id);
+	}
+	
 	public void saveAll(List<User> users) {
 		repository.saveAll(users);
 	}
